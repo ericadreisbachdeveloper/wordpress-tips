@@ -6,19 +6,19 @@ An evolving list of WordPress tips and tricks
 ## Add Categories to Pages 
 Example below used on EnviroServe - [enviroserve.com](https://enviroserve.com)
 
-`/*` 
-` * Add Categories to Pages`
-` * powers the cards on Sub Services pages`
-` * ref: https://stackoverflow.com/a/14711608`
-` */`
-`add_action('init', 'add_categories_to_pages');`
-` `
-`function add_categories_to_pages()`
-`{`
-` `
-`    // Add category metabox to page`
-`    register_taxonomy_for_object_type('category', 'page');`
-` `
+`/*` <br>
+` * Add Categories to Pages`<br>
+` * powers the cards on Sub Services pages`<br>
+` * ref: https://stackoverflow.com/a/14711608`<br>
+` */`<br>
+`add_action('init', 'add_categories_to_pages');`<br>
+` `<br>
+`function add_categories_to_pages()`<br>
+`{`<br>
+` `<br>
+`    // Add category metabox to page`<br>
+`    register_taxonomy_for_object_type('category', 'page');`<br>
+` `<br>
 `}`
 
 
@@ -26,21 +26,21 @@ Example below used on EnviroServe - [enviroserve.com](https://enviroserve.com)
 ## Custom Admin Post Columns 
 Example below used on Carow Packaging - [carowpackaging.com](https://carowpackaging.com) 
 
-`/*`
-` * Custom Post Columns`
-` * ref: https://developer.wordpress.org/reference/hooks/manage_posts_columns/` 
-` */`
-`add_filter('manage_posts_columns', 'set_post_columns');`
-` `
-`function set_post_columns($columns)`
-`{`
-`    return [`
-`        'title' => __('Title'),`
-`        'date' => __('Date'),`
-`        'taxonomy-category' => __('Resource Type'),`
-`        'taxonomy-market' => __('Markets'),`
-`        'taxonomy-product-category' => __('Product Categories'),`
-`    ];`
+`/*`<br>
+` * Custom Post Columns`<br>
+` * ref: https://developer.wordpress.org/reference/hooks/manage_posts_columns/` <br>
+` */`<br>
+`add_filter('manage_posts_columns', 'set_post_columns');`<br>
+` `<br>
+`function set_post_columns($columns)`<br>
+`{`<br>
+`    return [`<br>
+`        'title' => __('Title'),`<br>
+`        'date' => __('Date'),`<br>
+`        'taxonomy-category' => __('Resource Type'),`<br>
+`        'taxonomy-market' => __('Markets'),`<br>
+`        'taxonomy-product-category' => __('Product Categories'),`<br>
+`    ];`<br>
 `}`
 
 
@@ -66,3 +66,8 @@ This was necessary for local CLI commands:
 
 
 ## Custom Post Types
+[Basic Register Post Type](basic-register-post-type.php)
+
+[Basic Register Taxonomy](basic-register-post-type.php)
+
+[Change Default Post Object](change-default-post-object.php)
