@@ -46,21 +46,24 @@ Example below used on Carow Packaging - [carowpackaging.com](https://carowpackag
 
 
 ## Diagnostics 
-*29 October 2024* 
-1. Update WordPress Command Line Interface (CLI) 
+*as of 29 October 2024* 
+
+For webhosts that allow WordPress command line interface (CLI) (*not* Pantheon):
+
+1. Update WordPress Command Line Interface (CLI) <br>
 `$ wp cli update`
 
-2. Install `profile` command 
+2. Install `profile` command <br>
 `$ wp package install wp-cli/profile-command`
 
-3. Identify slow modules
+3. Identify slow modules <br>
 `$ wp profile stage --fields=stage,time,cache_ratio`
 
 
 
 ## Another name for localhost 
-*28 October 2024* 
-This was necessary for local CLI commands: 
+*28 October 2024* <br>
+This was necessary for local CLI commands: <br>
 `define('DB_HOST', '127.0.0.1');`
 
 
