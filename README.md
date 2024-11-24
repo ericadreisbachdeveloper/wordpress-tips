@@ -2,6 +2,8 @@
 An evolving list of WordPress tips and tricks 
 
 
+## Shortcodes 
+
 
 ## Add Categories to Pages 
 Example below used on EnviroServe - [enviroserve.com](https://enviroserve.com)

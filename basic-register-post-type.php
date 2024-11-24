@@ -46,4 +46,10 @@ function car_post_types_init()
     );
 
     register_post_type('Team', $team_args);
+
+
+    // include flush_rewrite_rules(); as needed when permalinks change
+    // flush_rewrite_rules();
+
+
 }

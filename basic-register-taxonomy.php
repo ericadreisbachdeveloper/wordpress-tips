@@ -37,7 +37,8 @@ function car_post_types_init()
     );
 
 
-    flush_rewrite_rules();
+    // include flush_rewrite_rules(); as needed when permalinks change
+    // flush_rewrite_rules();
 
 
 }

@@ -28,10 +28,13 @@ function car_post_object()
     // Disable Gutenberg and allow Advanced Layout Builder in Resources (fka Posts)
     $get_post_type->show_in_rest = '0';
 
-
     // Disable Gutenberg and allow Advanced Layout Builder in Pages
     $get_page = get_post_type_object('page');
 
     $get_page->show_in_rest = '0';
+
+
+    // include flush_rewrite_rules(); as needed when permalinks change
+    // flush_rewrite_rules();
 
 }
