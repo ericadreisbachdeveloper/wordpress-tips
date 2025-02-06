@@ -1,10 +1,10 @@
 <?php
 
 
-add_action('init', 'car_post_types_init');
+add_action('init', 'foo_tax_init');
 
 
-function car_post_types_init()
+function foo_tax_init()
 {
 
     register_taxonomy(

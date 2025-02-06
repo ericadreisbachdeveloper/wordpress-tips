@@ -2,8 +2,6 @@
 An evolving list of WordPress tips and tricks 
 
 
-
-
 ## Trim Excerpt
 *16 Dec 2024* <br>
 Lightweight, very nice 
@@ -12,9 +10,6 @@ ref: https://developer.wordpress.org/reference/functions/the_excerpt/
 
 `<?php echo wp_trim_words(get_the_excerpt(), 15); ?>`
 
-
-
-## Shortcodes 
 
 
 ## Add Categories to Pages 
