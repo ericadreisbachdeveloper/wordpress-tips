@@ -1,5 +1,9 @@
 <?php
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 // Used on Carow
 add_action('init', 'car_post_object');
 

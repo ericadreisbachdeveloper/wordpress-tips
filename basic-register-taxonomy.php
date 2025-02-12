@@ -1,5 +1,8 @@
 <?php
 
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 add_action('init', 'foo_tax_init');
 

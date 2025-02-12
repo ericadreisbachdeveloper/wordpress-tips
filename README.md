@@ -1,9 +1,56 @@
-# WordPress Tips
+# wordpress-tips
 An evolving list of WordPress tips and tricks 
 
 
+
+
+## Debugging
+*8 Feb 2025 - erica@peppergroup.com*
+
+[debugging.php](debugging.php)
+
+- Output php files used to create a given page
+- Output registered scripts
+
+
+
+## Add ACF Fields to Admin Screens
+*12 Feb 2025 - erica@peppergroup.com*
+
+[add-acf-image-to-admin-scren.php](add-acf-image-to-admin-scren.php) 
+
+This is very good, very helpful, especially for **featured images**. Can be repurposed for w/e you want to add as a custom column. 
+
+
+
+## Images
+*8 Feb 2025 - erica@peppergroup.com*
+
+The most powerful Wordpress image function of all time: `wp_prepare_attachment_for_js($img_id);`
+
+`$img_js = wp_prepare_attachment_for_js($img_id);`
+`$img = $img_js['sizes']['large']['url'];`
+`$title = $img_js['title'];`
+`$alt = $img_js['alt'];`
+
+
+
+## Basic Shortcode 
+*6 Feb 2025 - erica@peppergroup.com*<br> 
+The classic: a shortcode to output &copy;YYYY 
+
+[shortcode-copyright.php](shortcode-copyright.php)
+
+
+
+## Yoast Excerpt Shortcode
+*6 Feb 2025 - erica@peppergroup.com*<br>
+
+[shortcode-yoast-excerpt.php](shortcode-yoast-excerpt.php) 
+
+
 ## Trim Excerpt
-*16 Dec 2024* <br>
+*16 Dec 2024 - erica@peppergroup.com* <br>
 Lightweight, very nice 
 
 ref: https://developer.wordpress.org/reference/functions/the_excerpt/
@@ -13,50 +60,22 @@ ref: https://developer.wordpress.org/reference/functions/the_excerpt/
 
 
 ## Add Categories to Pages 
+*Dec 2024 - erica@peppergroup.com* <br>
 Example below used on EnviroServe - [enviroserve.com](https://enviroserve.com)
 
-`/*` <br>
-` * Add Categories to Pages`<br>
-` * powers the cards on Sub Services pages`<br>
-` * ref: https://stackoverflow.com/a/14711608`<br>
-` */`<br>
-`add_action('init', 'add_categories_to_pages');`<br>
-` `<br>
-`function add_categories_to_pages()`<br>
-`{`<br>
-` `<br>
-`    // Add category metabox to page`<br>
-`    register_taxonomy_for_object_type('category', 'page');`<br>
-` `<br>
-`}`
-
+(add-categories-to-pages.php)[add-categories-to-pages.php]
 
 
 ## Custom Admin Post Columns 
+*Dec 2024 - erica@peppergroup.com* <br>
 Example below used on Carow Packaging - [carowpackaging.com](https://carowpackaging.com) 
 
-`/*`<br>
-` * Custom Post Columns`<br>
-` * ref: https://developer.wordpress.org/reference/hooks/manage_posts_columns/` <br>
-` */`<br>
-`add_filter('manage_posts_columns', 'set_post_columns');`<br>
-` `<br>
-`function set_post_columns($columns)`<br>
-`{`<br>
-`    return [`<br>
-`        'title' => __('Title'),`<br>
-`        'date' => __('Date'),`<br>
-`        'taxonomy-category' => __('Resource Type'),`<br>
-`        'taxonomy-market' => __('Markets'),`<br>
-`        'taxonomy-product-category' => __('Product Categories'),`<br>
-`    ];`<br>
-`}`
+(custom-admin-post-columns.php)[custom-admin-post-columns.php]
 
 
 
 ## Diagnostics 
-*as of 29 October 2024* 
-
+*29 Oct 2024 - erica@peppergroup.com* <br>
 For webhosts that allow WordPress command line interface (CLI) (*not* Pantheon):
 
 1. Update WordPress Command Line Interface (CLI) <br>
@@ -71,13 +90,14 @@ For webhosts that allow WordPress command line interface (CLI) (*not* Pantheon):
 
 
 ## Another name for localhost 
-*28 October 2024* <br>
+*28 October 2024 - erica@peppergroup.com* <br>
 This was necessary for local CLI commands: <br>
 `define('DB_HOST', '127.0.0.1');`
 
 
 
 ## Custom Post Types
+*Sep 2024 - erica@peppergroup.com* <br>
 [Basic Register Post Type](basic-register-post-type.php)
 
 [Basic Register Taxonomy](basic-register-post-type.php)

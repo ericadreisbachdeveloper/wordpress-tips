@@ -1,5 +1,9 @@
 <?php
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 add_action('init', 'foo_post_types_init');
 
 function foo_post_types_init()
