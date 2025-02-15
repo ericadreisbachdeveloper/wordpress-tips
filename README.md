@@ -3,6 +3,10 @@ An evolving list of WordPress tips and tricks
 
 
 
+## Basic wp_query
+*12 Feb 2025 - erica@peppergroup.com*
+
+
 
 ## Debugging
 *8 Feb 2025 - erica@peppergroup.com*
