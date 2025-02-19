@@ -45,9 +45,11 @@ if ($wp_query->have_posts()) { ?>
 
 <div class="xxx-pagination">
 
+<?php /* http://localhost/robertshaw/parts/gas-valves/page/3/?view=grid */ 
+
 <?php $big = 999999999;
 _e(paginate_links([
-    'format' => 'page/%#%', /* <<< this argument used to accommodate URL rewrites on robertshaw.com */
+    'format' => '?page=%#%',  /* <<< this argument used to accommodate URL rewrites on robertshaw.com */
     'current' => max(1, get_query_var('paged')),
     'prev_text' => __('&laquo; Previous'),
     'next_text' => __('Next &raquo;'),
@@ -55,7 +57,14 @@ _e(paginate_links([
 ?>
 
 </div>
-
+<div class="rsh-pagination">
+<?php $big = 999999999;
+_e(paginate_links([
+    'format' => '?page=%#%',
+    'current' => max(1, get_query_var('paged')),
+    'total' => $wp_query->max_num_pages]));
+?>
+</div>
 
 
 <?php wp_reset_postdata();
