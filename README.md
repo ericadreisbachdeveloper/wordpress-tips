@@ -2,6 +2,11 @@
 An evolving list of WordPress tips and tricks 
 
 
+## Pass Shortcode Att to Template Include
+*20 Feb 2025 - erica@peppergroup.com*
+
+[pass-shortcode-att-to-include.php](pass-shortcode-att-to-include.php)
+
 
 ## Add WordPress Default Taxonomies to Pages 
 *19 Feb 2025 - erica@peppergroup.com* 
