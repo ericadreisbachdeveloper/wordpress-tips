@@ -42,7 +42,7 @@ An evolving list of WordPress tips and tricks
 ## Add ACF Fields to Admin Screens
 *12 Feb 2025*
 
-[add-acf-image-to-admin-scren.php](add-acf-image-to-admin-scren.php) 
+[add-acf-image-to-admin-screen.php](add-acf-image-to-admin-screen.php) 
 
 This is very good, very helpful, especially for **featured images**. Can be repurposed for w/e you want to add as a custom column. 
 
