@@ -1,6 +1,5 @@
 <?php
 
-
 /*
  * Category-Series Dashboard - 1 of 2
  * - remove Description column
