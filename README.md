@@ -3,34 +3,34 @@ An evolving list of WordPress tips and tricks
 
 
 ## Pass Shortcode Att to Template Include
-*20 Feb 2025 - erica@peppergroup.com*
+*20 Feb 2025*
 
 [pass-shortcode-att-to-include.php](pass-shortcode-att-to-include.php)
 
 
 ## Add WordPress Default Taxonomies to Pages 
-*19 Feb 2025 - erica@peppergroup.com* 
+*19 Feb 2025* 
 
 [yoast-shortcodes-in-fields.php](yoast-shortcodes-in-fields.php)
 
 
 
 ## Add WordPress Default Taxonomies to Pages 
-*15 Feb 2025 - erica@peppergroup.com* 
+*15 Feb 2025* 
 
 [add-taxonomy-to-pages.php](add-taxonomy-to-pages.php)
 
 
 
 ## Basic wp_query
-*12 Feb 2025 - erica@peppergroup.com*
+*12 Feb 2025*
 
 [basic-wp_query.php](basic-wp_query.php)
 
 
 
 ## Debugging
-*8 Feb 2025 - erica@peppergroup.com*
+*8 Feb 2025*
 
 [debugging.php](debugging.php)
 
@@ -40,7 +40,7 @@ An evolving list of WordPress tips and tricks
 
 
 ## Add ACF Fields to Admin Screens
-*12 Feb 2025 - erica@peppergroup.com*
+*12 Feb 2025*
 
 [add-acf-image-to-admin-scren.php](add-acf-image-to-admin-scren.php) 
 
@@ -49,7 +49,7 @@ This is very good, very helpful, especially for **featured images**. Can be repu
 
 
 ## Images
-*8 Feb 2025 - erica@peppergroup.com*
+*8 Feb 2025*
 
 The most powerful Wordpress image function of all time: `wp_prepare_attachment_for_js($img_id);`
 
@@ -61,7 +61,7 @@ The most powerful Wordpress image function of all time: `wp_prepare_attachment_f
 
 
 ## Basic Shortcode 
-*6 Feb 2025 - erica@peppergroup.com*
+*6 Feb 2025*
 
 The classic: a shortcode to output &copy;YYYY 
 
@@ -70,7 +70,7 @@ The classic: a shortcode to output &copy;YYYY
 
 
 ## Trim Excerpt
-*16 Dec 2024 - erica@peppergroup.com* 
+*16 Dec 2024* 
 
 Lightweight, very nice 
 
@@ -81,7 +81,7 @@ ref: https://developer.wordpress.org/reference/functions/the_excerpt/
 
 
 ## Add Categories to Pages 
-*Dec 2024 - erica@peppergroup.com* 
+*Dec 2024* 
 
 Example below used on EnviroServe - [enviroserve.com](https://enviroserve.com)
 
@@ -90,7 +90,7 @@ Example below used on EnviroServe - [enviroserve.com](https://enviroserve.com)
 
 
 ## Custom Admin Post Columns 
-*Dec 2024 - erica@peppergroup.com* 
+*Dec 2024* 
 
 Example below used on Carow Packaging - [carowpackaging.com](https://carowpackaging.com) 
 
@@ -99,7 +99,7 @@ Example below used on Carow Packaging - [carowpackaging.com](https://carowpackag
 
 
 ## Diagnostics 
-*29 Oct 2024 - erica@peppergroup.com* 
+*29 Oct 2024* 
 
 For webhosts that allow WordPress command line interface (CLI) (*not* Pantheon):
 
@@ -115,7 +115,7 @@ For webhosts that allow WordPress command line interface (CLI) (*not* Pantheon):
 
 
 ## Another name for localhost 
-*28 October 2024 - erica@peppergroup.com* 
+*28 October 2024* 
 
 This was necessary for local CLI commands: <br>
 `define('DB_HOST', '127.0.0.1');`
@@ -123,12 +123,13 @@ This was necessary for local CLI commands: <br>
 
 
 ## Custom Post Types
-*Sep 2024 - erica@peppergroup.com* 
+*Sep 2024* 
 
 [Basic Register Post Type](basic-register-post-type.php)
 
 [Basic Register Taxonomy](basic-register-post-type.php)
 
 [Change Default Post Object](change-default-post-object.php)
+
 
 
