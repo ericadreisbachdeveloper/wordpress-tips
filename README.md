@@ -2,6 +2,20 @@
 An evolving list of WordPress tips and tricks 
 
 
+## Escape Functions 
+*10 Apr 2025* 
+
+https://www.sitepoint.com/sanitizing-escaping-validating-data-in-wordpress/
+
+- `_e( sanitize_email(...); ` 
+- `_e( sanitize_file_name(...); `
+- `_e( sanitize_key(...);  // can only have lowercase alphanumeric characters, dashes and underscores` 
+- `_e( sanitize_text_field(...);  //  removes invalid UTF-8 characters, converts HTML specific characters to entities, strips all tags, and removes line breaks, tabs and extra whitespace, strip octet; WordPress uses to sanitize widget titles ` 
+- `_e( sanitize_title(...); // removes PHP and HTML tags from a string, as well as removing accents. Whitespace characters are converted to dashes ("permalinks")`
+- `esc_html(...) // escapes HTML specific characters`
+- `esc_url(...) // escape the href attribute to protext from XSS attack via URL`
+- `antispambot(...) // protext email addresses from spambot scrapes`
+
 
 ## Pass Shortcode Att to Template Include
 *20 Feb 2025*
